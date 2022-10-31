@@ -1,0 +1,154 @@
+body{
+    font-family: "open-sans",sans-serif;
+    background-image: url("./asset/annie.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.begin{
+    margin-top: 30px;
+    color: #2eb2da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    right: 40px;
+    position: fixed;
+    background-color: #ffa500;
+
+}
+/* @media screen and (max-width: 768px){
+    .begin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container{
+        width: 320px;
+        height: 520px;
+        background-color:moccasin;
+        margin: 0 auto;
+        margin-left: 100px;
+        top: 80px; 
+        position: relative;
+        border-radius: 7px;
+        box-shadow: 0 40px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+} */
+.fr{
+    display: flex;
+    
+}
+.name{
+    margin: 0 10px;
+}
+.histories{
+    display: flex;
+    float: left;
+    border: 1px solid #f08080;
+    border-radius: 7px;
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    transition: all ease 500ms;
+    cursor: pointer;
+}
+.histories:hover{
+    padding: 12px 5px;
+    background-color: #2eb2da;
+}
+
+#container{
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color:moccasin;
+    margin: 0 auto;
+    top: 80px; 
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0 40px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result{
+    height: 120px;
+}
+
+#history{
+    text-align: right;
+    height: 60px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 24px;
+}
+
+#keyboard{
+    height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty{
+    background-color: #eaede1;
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.number:active, .operator:active{
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #2eb2da;
+}
+
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #ffa500;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: #f08080;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #9477af;
+}
+
